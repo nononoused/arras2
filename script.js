@@ -108,7 +108,7 @@ for(let i=0;i<50;i++) {
   }
 }
 
-elements[1].value = 'grass-toucher' + (Math.random().toFixed(3)).slice(2)
+elements[1].value = 'guest' + (Math.random().toFixed(3)).slice(2)
 
 window.addEventListener('contextmenu', function(e) {
   e.preventDefault()
