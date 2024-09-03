@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" href="https://florr.io/favicon-32x32.png" /> -->
+    <title>test</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="visibility:hidden;pointer-events:none;">
+    <div class="circumscale">
+      <canvas id="i5"></canvas>
+      <!-- <img src="https://static.wikia.nocookie.net/diepio/images/a/a0/ArrasRelicPentagonPurple.png" style="opacity:0.5;width:660px;position:absolute;top:50%;left:50%;transform:translate(-46%,-50%);" /> -->
+      <!-- <img src="https://static.wikia.nocookie.net/diepio/images/0/09/ArrasRelicTrianglePurple.png" style="opacity:0.5;width:660px;position:absolute;top:50%;left:50%;transform:translate(-40%,-50%);" /> -->
+      <!-- <img src="https://static.wikia.nocookie.net/diepio/images/f/fa/ArrasRelicSquarePurple.png" style="opacity:0.5;width:455px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);" /> -->
+    </div>
+    <div class="inscale">
+      <div id="i8">
+        <div id="i4" stroke="test"></div>
+        <div id="i2" stroke="this is the tale of..."></div>
+        <div id="i3" stroke="[enter] find server"></div>
+        <input type="text" id="i1" placeholder="Display Name" maxlength="20" />
+      </div>
+      <div id="i6" style="visibility:hidden;">
+        <div id="i12" style="visibility:hidden;">
+          <input type="text" id="i9" class="i9" />
+          <div id="i10" stroke="Press ENTER or click here to chat" maxlength="250"></div>
+          <div id="i11" stroke="[Local]" hidden></div>
+        </div>
+      </div>
+      <div id="i7" stroke="0fps"></div>
+    </div>
+    <div class="circle">
+    </div>
+    <div id="i0" class="inscale">
+      <div class="center">Loading...</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/msgpack-lite/0.1.26/msgpack.min.js" integrity="sha512-harMiusNxs02ryf3eqc3iQalz2RSd0z38vzOyuFwvQyW046h2m+/47WiDmPW9soh/p71WQMRSkhSynEww3/bOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="interpreter.js"></script>
+    <script>
+      window.module = {}
+    </script>
+    <script src="constants.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

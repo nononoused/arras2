@@ -1,0 +1,221 @@
+* {
+  font-family: 'Ubuntu', serif;
+  user-select: none;
+  outline: none;
+  transform-origin: 0 0;
+}
+
+::placeholder {
+  color: rgb(220, 220, 220);
+  opacity: 1;
+}
+
+body {
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: max(142vw, 142vh);
+  height: max(142vw, 142vh);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1em rgb(24, 24, 24);
+  pointer-events: none;
+  font-size: max(71vw, 71vh);
+  transition: font-size 0.5s ease;
+}
+
+.circumscale, .inscale {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+[stroke] {
+  --stroke-size: 0.15em;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+[stroke]:before {
+  content: attr(stroke);
+}
+
+[stroke]:after {
+  content: attr(stroke);
+  color: inherit;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-text-stroke: 0;
+}
+
+#i0 {
+  background: rgb(24, 24, 24);
+  font-size: 140px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+#i1 {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 44px;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(34, 34, 34);
+  font-size: 28px;
+}
+
+#i2 {
+  position: absolute;
+  top: calc(50% - 70px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 30px;
+  -webkit-text-stroke: 6px rgb(0, 0, 0);
+}
+
+#i3 {
+  position: absolute;
+  top: calc(50% + 24px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 22px;
+  -webkit-text-stroke: 6px rgb(0, 0, 0);
+}
+
+#i4 {
+  position: absolute;
+  top: calc(50% - 200px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-size: 100px;
+  -webkit-text-stroke: 20px rgb(0, 0, 0);
+}
+
+#i5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: all;
+}
+
+#i7 {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  white-space: nowrap;
+  font-size: 20px;
+  -webkit-text-stroke: 6px rgb(0, 0, 0);
+}
+
+#i9 {
+  font-size: 20px;
+  caret-color: rgb(0, 0, 0);
+  padding-left: 70px;
+  padding-right: 5px;
+}
+
+.i9 {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 5px;
+  width: calc(100% - 75px);
+  height: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.i9active {
+  background: rgb(255, 255, 255);
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 7px;
+  width: calc(100% - 81px);
+  height: calc(100% - 4px);
+  margin: -1px;
+  color: rgb(0, 0, 0);
+}
+
+#i10 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+  pointer-events: none;
+  transform: translate(10px, -138%);
+}
+
+#i11 {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  -webkit-text-stroke: 3px rgb(0, 0, 0);
+  pointer-events: none;
+  transform: translate(8px, -138%);
+}
+
+#i12 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  height: 35px;
+}
+
+#i8, #i6 {
+  pointer-events: all;
+}
+
+.selectable {
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.selectable:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.selectable:active {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.selectable-golden {
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+
+.selectable-golden:hover {
+  background: rgba(190, 190, 0, 0.2);
+}
+
+.selectable-golden:active {
+  background: rgba(190, 190, 0, 0.25);
+  transition: background 0.02s ease;
+}
+
+.selected-golden {
+  background: rgba(230, 230, 0, 0.25);
+  transition: background 0.2s ease;
+}
