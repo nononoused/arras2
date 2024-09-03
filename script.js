@@ -6,7 +6,7 @@ for(let i in c) {
   window[i] = c[i]
 }
 
-const server = 'wss://scenexe-temporary-server.glitch.me'
+const server = 'wss://arras2-io-test.glitch.me'
 
 
 
